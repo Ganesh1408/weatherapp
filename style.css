@@ -1,0 +1,318 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Roboto";
+}
+
+.container{
+    background-image: url("https://img.freepik.com/free-photo/arrangement-red-violet-blue-colours-when-i-see-them_23-2148282504.jpg?size=626&ext=jpg&ga=GA1.1.279629526.1724582660&semt=ais_hybrid");
+    height:100%;
+    width:100%;
+    background-size:cover; 
+    
+}
+@media screen and (min-width:980px){
+    .container{
+        height:100vh;
+    }
+    
+}
+
+
+.heading{
+    color:white;
+    font-size:25px;
+}
+@media screen and (min-width:980px) {
+    .heading{
+        font-size:30px;
+    }
+}
+
+
+.header-container{
+    padding:20px;
+    height:60px;
+    width:100vw;
+    display:flex;
+    justify-content: space-evenly;
+    position:relative;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    
+    
+
+}
+
+
+@media screen and (min-width:980px) {
+.header-container{
+    padding:30px;
+    height:80px;
+    justify-content: space-between;
+}
+}
+
+.menu-icon{
+    display:block;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+
+}
+@media screen and (min-width:980px){
+    .menu-icon{
+        display:none;
+    }
+}
+
+#menu-right-list{
+    transition: max-height 0.25s ease-out, opacity 0.25s ease-out;  
+    
+}
+
+
+
+@media screen and (max-width:980px){
+.right-menu-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    align-items: center;
+    gap:0;
+    overflow:hidden;
+    
+    padding:10px;
+    
+    
+        
+}
+}
+
+
+
+@media screen and (max-width:980px){
+    input{
+        margin-top:10px;
+    }
+}
+
+input{
+    height:40px;
+    width:160px;
+    text-align: center;
+    color:black;
+    font-size:14px;
+    border-radius: 6px;
+    border:none;
+    
+}
+
+button{
+    height:40px;
+    width:160px;
+    border-radius:6px;
+    border:none;
+    font-size:14px;
+    cursor:pointer;
+    
+}
+@media screen and (min-width:980px){
+    button{
+        margin-right:10px;
+    }
+}
+    
+
+    
+
+.location{
+    font-size:18px;
+    color:white;
+    display:block;
+    text-align: center;
+    padding:25px;
+    font-weight:bold;
+      
+    
+}
+@media screen and (min-width:980px){
+    .location{
+        display:inline;
+    }
+}
+
+.location-container{
+    
+    display:inline;
+    height:40px;
+    width:160px;
+    border-radius:6px;
+    background-color:transparent;
+    
+    
+
+  
+}
+
+.weather-data{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.current-weather{
+    height:260px;
+    width:70%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:1px solid black;
+    border-left:none;
+    border-top:none;
+    margin:10px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding:15px;
+    border-radius:8px;
+    
+}
+@media screen and (min-width:980px){
+    .current-weather{
+        height:240px;
+        width:60%;
+    }
+}
+
+.details{
+    height:240px;
+    font-size:25px;
+    width:70%;
+    line-height:30px;
+    text-align:center;
+    justify-content: center;
+    align-content: center;
+    color:white;
+    font-weight:bold;
+    
+}
+
+h2{
+    font-size:20px;
+    
+}
+h6{
+    font-size:18px;
+}
+@media screen and (min-width:980px){
+    h2{
+        font-size:30px;
+    }
+    h6{
+        font-size:22px;
+    }
+}
+.days-forecast{
+
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}  
+h2{
+    text-align: center;
+    color:white;
+} 
+.weather-cards{
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+    height:100%;
+    margin-top:20px;
+
+    
+
+}    
+@media screen and (min-width:980px){
+    .weather-cards{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        
+        
+        
+        
+    }
+}   
+    
+      
+        
+
+
+
+.card{
+    height:240px;
+    width:60%;
+    margin-top:10px;
+    padding:10px;
+    border:1px solid black;
+    list-style-type: none;
+    margin-bottom:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    
+    
+    color:white;
+    line-height:30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(102, 97, 115, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 10px 10px black;
+    
+}
+@media screen and (min-width:980px){
+    .card{
+        
+        margin-right:10px;
+        margin-left:10px;
+    }
+}
+img{
+    height:60px;
+    width:60px;
+}
+@media screen and (min-width:980px){
+    img{
+        height:100px;
+        width:100px;
+    }
+    
+}
+h6{
+    color:white
+}
